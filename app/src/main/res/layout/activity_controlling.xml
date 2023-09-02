@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_mainmenu2"
+    tools:context=".ControllingActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/ic_control_title"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:id="@+id/pertama"
+            android:layout_width="360dp"
+            android:layout_height="110dp"
+            android:background="@drawable/roundedcorner"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/penyiraman"
+                android:src="@drawable/penyiraman" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Pompa Penyiraman"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siram"
+                        android:layout_marginStart="20dp"
+                        android:textOn="MANUAL ON"
+                        android:textOff="MANUAL OFF"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/siramauto"
+                        android:layout_marginStart="20dp"
+                        android:textOn="AUTO ON"
+                        android:textOff="AUTO OFF"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/kedua"
+            android:layout_width="360dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/roundedcorner"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/pupuk" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Pompa Pupuk"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pupuk"
+                        android:layout_marginStart="20dp"
+                        android:textOn="MANUAL ON"
+                        android:textOff="MANUAL OFF"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pupukauto"
+                        android:layout_marginStart="20dp"
+                        android:textOn="AUTO ON"
+                        android:textOff="AUTO OFF"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ketiga"
+            android:layout_width="360dp"
+            android:layout_height="110dp"
+            android:background="@drawable/roundedcorner"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/pestisida" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Pompa Pestisida"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pestisida"
+                        android:layout_marginStart="20dp"
+                        android:textOn="MANUAL ON"
+                        android:textOff="MANUAL OFF"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/kempat"
+            android:layout_width="360dp"
+            android:layout_height="110dp"
+            android:background="@drawable/roundedcorner"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/kipas" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Kipas"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/kipas"
+                        android:layout_marginStart="20dp"
+                        android:textOn="MANUAL ON"
+                        android:textOff="MANUAL OFF"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                    <ToggleButton
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/kipasauto"
+                        android:layout_marginStart="20dp"
+                        android:textOn="AUTO ON"
+                        android:textOff="AUTO OFF"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
